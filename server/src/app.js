@@ -16,7 +16,7 @@ app.use(cors())
 //attach all endpoints to 'app' variable
 require('./routes')(app)
 
-//conntect sequelize to database, and create the tables
+//connect sequelize to database, and create the tables
 sequelize.sync()
 .then(() => {
     app.listen(config.port)
